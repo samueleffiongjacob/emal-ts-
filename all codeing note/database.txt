@@ -1,0 +1,341 @@
+INSTALLING DATABASE:
+MYSQL
+add mysql server to path
+goto programs click mysql server
+click on bin folder in mysql
+steps: copy the bin 
+go setting type eniveronment 
+then click on path
+create new
+the paste the bin u copied
+click oky 3 times
+
+to know your version
+type : mysql --version
+-------------------------------------------------------------------------------------------
+INSTALLING DATABASE:
+MONGO DB:
+FOR MONGO DB
+
+add mongo server to path
+goto programs click server
+click on bin folder in mongo
+steps: copy the bin 
+go setting type eniveronment 
+then click on path
+create new
+the paste the bin u copied
+click oky 3 times
+
+to know your version
+type : mongo
+
+--------------------------------------------------------------------------------------------------------------
+MY DATABASE DIRECTORY AND INFOR ON WINDOWNS MACHINE:
+Data Directory    C:\Program Files\MongoDB\Server\5.0\data\
+
+log Directory:     C:\Program Files\MongoDB\Server\5.0\log\
+
+
+MY SQL INSTALL DIRECTORIES:   C:\Program Files\MySQL\MySQL Server 8.0
+
+DATA DIRECTORY:   C:\ProgramData\MySQL\MySQL Server 8.0
+
+port: 3306
+
+x protocol port: 33060
+
+winsow serivce name : MYSQL80
+---------------------------------------------------------------------------------------------
+MYSQL DATABASE COMMAND TERMINAL CODE:
+
+to login
+type: mysql -u root -p
+
+MY LOCAL LOGIN INFO:usernamr: samueleffiong
+password: FGCIcisco15$
+
+
+login2:
+mysql -u test -p
+test
+
+mysql -u samueleffiong -p
+FGCIcisco15$
+
+
+create a user
+CREATE USER 'name it'@'localhost'IDENTIFIED BY 'name';
+
+check if the database as been create
+use mysql;
+select user from user;
+
+to be able to use database
+0) TO Remove all privilage
+FLUSH PRIVILEGES;
+
+grant permission to users
+1)permission to only read fills
+GRANT SELECT ON *.* TO 'user'@'localhost';
+
+note: '.' means alldatabase
+
+2)permission to all files
+GRANT ALL ON *.* TO 'user'@'localhost';
+
+note: '.' means alldatabase
+
+3) permission to create a databbase is a database
+GRANT CREATE ON *.* TO 'user'@'localhost';
+
+note: '.' means alldatabase
+
+4) permission to Delete a databbase is a database
+GRANT DELETE ON *.* TO 'user'@'localhost';
+
+note: '.' means alldatabase
+
+5) permission to DROP a databbase is a database
+GRANT DROP ON *.* TO 'user'@'localhost';
+
+note: '.' means alldatabase
+
+6) permission to EXCUTE a databbase is a database
+GRANT EXCUTE ON *.* TO 'user'@'localhost';
+
+note: '.' means alldatabase
+
+7) permission to INSERT a databbase is a database
+GRANT INSERT ON *.* TO 'user'@'localhost';
+
+note: '.' means alldatabase
+
+8) permission to SHOW  a databbase is a database
+GRANT SHOW DATABASE ON *.* TO 'user'@'localhost';
+
+note: '.' means alldatabase
+
+9) permission to UPDATE a databbase is a database
+GRANT UPDATE ON *.* TO 'user'@'localhost';
+
+note: '.' means alldatabase
+
+TO SEE PRIVILEGES permission FOR A users
+1) SHOW GRANTS FOR 'user'@'localhost';
+
+
+working with my sql
+DESCRIBE name;
+ SELECT * FROM name;
+show create tables name;
+
+SELECT VALUES
+SELECT NOW()
+SELECT CURRENT_TIMESTAMP()
+SELECT * FROM users WHERE user_id =1;
+SELECT email user_id FROM users;
+SELECT user_id email FROM users
+SELECT * FROM users
+
+
+CRUD: CREATE,READ,UPDATE AND DELECTE
+
+INSERTING VALUES
+ INSERT INTO users VALUES( 2, 'samuel@gmail.com', '+2348164570781');
+
+UPDATING VALUES
+ update users set email='samuelesssstrdbn@vdb.ocm' where user_id=1;
+
+UPDATING EVRETHING
+update users set email='samuelesssstrdbn@vdb.ocm'
+
+DELECTING VALUES
+ delete from users where  email='samuelesssstrdbn@vdb.ocm',
+
+DELECTING EVERTHING
+update users set email='samuelesssstrdbn@vdb.ocm'
+
+
+showing all users
+select user from mysql.user
+
+to grant privilage to users 
+
+grant all on user'name'.*to "@localhost;
+
+
+selecting roles
+select current_role();
+
+starting my sql server.
+mysqld
+
+shotting down server
+mysqladmin -u root -p shutdown
+
+to restart our mysql
+use window run (services.msc)
+
+revoking prefilliage
+REVOKE INSERT,UPDATE,DELETE ON tablename.* FROM username
+
+granting 
+GRANT INSER,UPDATE,DELETE on tablename.* FROM username
+
+
+-----------------------------------------------------------------------------
+WORKING MONOGODB:
+
+To see database
+show dbs;
+
+create  a user for mongo
+
+db.createUser({user:"name",pwd:"password",roles:[{role:'userAdminAnyDatabase', db:'admin'}]})
+
+to see exiting users
+show users
+
+to login users
+mongo --host localhost -u SAMUELEFFIONG -p FGCIcisco15$ --authenticationDatabase admin SAMUELEFFIONG
+
+
+mongo db
+to show databse-- show dbs
+
+use database-- use admin
+
+to find out the users:db.system.users.find()
+
+make it more arrange:
+db.system.users.find()
+
+to see users
+db.getUsers()
+
+## drop allusers
+db.dropAllUsers()
+
+
+to drop all users
+db.dropAllUsers() 
+
+get a specific user
+db.getUser('testing') 
+
+to logout of a particular database
+db.logout
+
+new user
+db.system.roles.find()
+use admin
+db.getRoles()
+
+
+creating a new user
+- use admin
+-db.createUser({user:'username',pwd:'',roles:[{role:'read',db:'test'}]})
+
+-db.createUser({user:'username',pwd:'',roles:[{role:'userAdminAnyDatabase',db:'admin'},'readWriteAnyDatabase']})
+
+login to a user
+mongo --authenticationDatabase "admin" -u "username" -p
+
+mongo username"" -u "test"-p
+
+show privalages
+db.getRole('readWriteAnyDatabase' {showprivileges: true} 
+
+dropping user
+db.dropUser('')
+
+
+
+
+## startdard class:
+creating a new user
+- use admin
+db.createUser({user:'username',pwd:'',roles:[{role:'userAdminAnyDatabase',db:'admin'},'readWriteAnyDatabase']})
+
+login to a user
+mongo --authenticationDatabase "admin" -u "username" -p
+
+## creatimg databse:
+use username (not the use command is to create database)
+db.name.insert( {"id":1, "name":""})
+show dbs
+use SAMUELEFFIONG
+
+find users:
+db.nameofdb.find()
+
+##printing in json
+db.nameofdb.find().forEach(printjson);
+
+##inserting multiple:
+var name = [{"employeeid":1, "employeename":"", "employeestatus":"Good", "employeeemail":"samuel@gmail.com", "employeephone":"0908988080809"},{"employeeid":2, "employeename":"sam", "employeestatus":"fair", "employeeemail":"samueddl@gmail.com", "employeephone":"8559584588930039"}];
+## inserting the above tabe
+db.name.insert(name)
+
+find users:
+db.nameofdb.find()
+
+##printing in json
+db.nameofdb.find().forEach(printjson);
+
+## to ensure that _id is not created for us by default specify it
+ db.name.insert({_id:4, "name":""});
+
+
+## database quary
+to retive data in default way:
+db.nameofdb.find() 
+or
+db.nameofdb.find().forEach(printjson);
+
+### let now specify our users by greater than a number
+db.nameofdb.find({name:{$gt:number}}).forEach(printjson);
+
+### let now specify our users by less than a number
+db.nameofdb.find({name:{$lt:number}}).forEach(printjson);
+
+#quary modification :
+1) by limiting
+db.nameofdb.find().limit(number).forEach(printjson);
+
+2) by sorting
+db.nameofdb.find().sort({name:item}).forEach(printjson);
+
+2i) sorting by assending other 
+db.nameofdb.find().sort({name:number}).forEach(printjson);
+
+2ii) sorting by desending other
+db.nameofdb.find().sort({name:-number}).forEach(printjson);
+
+
+#  COUTING AND REMOVING DB IN USERS
+
+db.name.count()
+
+
+db.name.remove({name:number});
+
+
+##Updating data
+
+1) updating one
+db.name.update({"name":number},{$set : {"name":""}})
+
+2) updating two
+db.name.update({"name":number},{$set : {"name":"" ,"name':""}})
+
+
+-----------------------------------------------------------------------------------------------
+
+
+VISIO is to creating data modeling
+---------------------------------------------------------------------------------------
+
+
+

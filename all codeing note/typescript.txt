@@ -1,0 +1,28 @@
+typescript use static code
+
+to see version
+tsc -v
+
+generate new config file
+tsc --init
+
+sepecifie root directory in 
+modules
+
+set the output to javacript in 
+emit
+"./dist"
+
+
+set for noEmitOnError
+to True
+
+enable sourc map
+
+now compile the new code
+
+set configaration file
+lauch.json
+
+
+

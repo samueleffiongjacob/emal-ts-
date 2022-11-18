@@ -1,0 +1,288 @@
+Starting up with software development:
+Recursion: way to stop infinity loops
+
+Pseudocode : this is a way u prepare to exsercute a software
+pseudocode methods.
+
+Flow chat, 
+chronologically,
+functionality.
+
+we have switch
+
+way to test after learning.
+
+coding Bat
+coderByte
+Hacker Rank
+
+
+more info
+mozilla Developer Network(MDN)
+front masters
+web.dev
+microsoft's developers docs
+
+--------------------------------------------------------------------
+npm list: to view packages
+npm view packagename versions : for seeing all versoion
+npm view express version: current version
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+Enviromental variable setup:
+file most be root directory
+
+React_ApI_name = ""
+
+## how to use
+procesw.env.React_ApI_name =
+
+--------------------------------------------------------------------------------------------------------------------------
+Resource urls:
+https://docs.google.com/document/d/1jR9Jp-p8Gzu1ZPgseiyVmf7iTtIAI6kIjjnyw6aUB_k/edit?usp=sharing
+https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl
+https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-windows
+
+React speacify resource:
+https://www.npmjs.com/package/react
+https://reactrouter.com/docs/en/v6/getting-started/overview
+https://react-icons.github.io/react-icons/
+
+learn node
+nodejs.org
+https://nodejs.org/en/docs/
+https://nodejs.dev/learn
+https://www.youtube.com/watch?v=TlB_eWDSMt4
+https://www.youtube.com/watch?v=zb3Qk8SG5Ms&list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU
+
+netnija(react and node)
+
+Introduction to Node.js (https://nodejs.dev/learn/)
+https://www.facebook.com/nodejsfoundation/
+
+---------------------------------------------------------------------------------------------------------------------------
+Teminal commands for windows:
+to create folder
+mkdir name
+
+to remove folder
+rmdir name
+
+cretae a file
+echo> name.extension
+
+to delect file
+
+del name,extenstion
+
+to clear console
+cls
+-------------------------------------------------------------------------------------------------------------------------------
+curl use for testing or running commands
+for the curl in windows
+https://curl.se/windows/
+add curl to your path 
+
+--------------------------------------------------------------------------------------------------------------------------
+    NPX
+npx is use to work with depency that does not exit in the server or computer
+----------------------------------------------------------------------------------------------
+
+basic server concerpt:
+
+package manager
+event loop
+event emitter
+timers
+callbacks concept
+callback implementation
+eslit modulos
+json '
+---------------------------------------------------------------------------------------------------
+         EXPRESS REPresentational State TRansfer(REST) APPlication Programming Interface(API):
+const express = require('express');
+
+const app = express();
+
+const PORT = 3000;
+
+// app.METHOD(PATH, HANDLER)
+
+// GET request
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
+
+// POST request
+app.post('/api/post', (req, res) => {
+    res.send('Got a POST method to the /user route')
+})
+
+// PUT/PATCH request
+app.put('/api/put', (req, res) => {
+    res.send('Got a PUT method to the /user route')
+})
+
+// PUT /user/:id
+app.put('/api/user/:id', (req, res) => {
+    console.log(req.params.id);
+    res.send('Got /api/user/:id');
+})
+
+// DELETE request
+app.delete('/api/delete', (req, res) => {
+    res.send('Got a DELETE method to the /user route')
+})
+
+app.listen(PORT, () => {
+    console.log(`Example App listening on port ${PORT}`);
+});
+
+-----------------------------------------------------------------------
+MENTOR API GUIDE CODE LINK:
+
+link to api work
+https://github.com/desirekaleba/sidehustle-restapi
+
+https://github.com/desirekaleba/sidehustle-restapis
+------------------------------------------------------------------------------------------------------------------------------------------
+JAvascript template engines
+
+ejs.co
+nunjuscks
+pug
+mustache
+handerbars
+template7
+dot.js
+----------------------------------------------------------------------------------------------------------------------------------------
+EJS CODE WRITTING guide
+const express = require('express');
+
+const path = require ('path');
+
+const app = express();
+## after first step uncomment line
+##app.use(express.static(path.join(_dirname, 'publics')))
+## app.set('source name',path.join(_dirname,'src/views')
+app.set('view engine', 'ejs') 
+
+## to test use 
+app.use('welcome to ')
+
+## then use
+
+app.render( 'filename'{title: "anyname"})
+
+app.listen(port,() => { console .log{'app runing '})
+
+
+## making title dynamic
+#in side title 
+
+<%= title &%> 
+
+## ejs url
+ejs.co
+-------------------------------------------------------------------------------------------------------------------
+   REACT
+
+1)style components 
+styled-components --save
+
+2)  import styled component from 'styled-component'
+
+3) crete the component
+const JSXStyled= stlyed.div` padding:2rem` 
+
+const jsxh1=styled.h1`color:blue`
+
+wrapper around our jsx elementp 
+
+hooks in react state  features from function components
+
+note: hooks can not be use in a class component
+
+
+react hooks is only use funtions
+
+types of build in hooks
+
+1) useState
+2) useEffect
+3) useContext
+4) useRef
+5) useReducer
+6) useMemo
+7) useCallback
+8) useImperativeHandle
+9) useLayoutEffect
+10)useDebugValue
+
+how to use ustate hooks
+
+const[count,setCount]=React.useState(0);
+
+rafce to generate unber class
+
+api fetch wed
+https://fakerapi.it/en
+
+to use javascript u need to do that outside the return statete
+
+
+FETCH API:
+fetch api is tool that is build into most mordern browers.
+
+const fetctpost= async() => {await fetch('')}
+.then(response => response.json())
+
+fetctpost()
+
+
+json
+
+--------------------------------------------------------------------
+  rEACT NAV:
+ const navref = useRef();
+    const ShowNavbar = () => {
+      navref.current.classlist.toggle(responsive_nav)
+    }
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+MongoDB is the document oriented database program like MySQL on the SQL side, MongoDB Atlas is MongoDB in the cloud and MongoDB Compass is the Graphical User Interface for Interacting with MongoDB with drag and drop functionalities 
+
+Avantages
+
+MongoDB being document-oriented makes it easy to manage data
+
+MongoDB atlas helps run MongoDB in the cloud which gives you a deployment service over your database
+
+MongoDB compass offers an easy-to-navigate interface to interact with MongoDB
+
+read about http and https below
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview
+
+-------------------------------------------------------------------------------------------------------------------
+  NODE MENTORS EMAILS:
+desirekaleba@gmail.com
+
+desirekaleba@gmail.com
+
++256708579015
+desirekaleba@gmail.com
+
++256708579015
+desirekaleba@gmail.com
+ 
+REACT mentors:
+08131805127-- react
+----------------------------------------------------------------------------------------------------------
+INTENSHIPS :
+https://fellowship.mlh.io/
+waiting.zuriboard.com
+microverse
+http://topuniverse.org/

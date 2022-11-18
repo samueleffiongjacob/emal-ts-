@@ -1,0 +1,14 @@
+
+    createdAt: {
+      type: Date,
+      index: true,
+      unique: true,
+      default: Date.now,
+    },
+
+    updateAt: {
+      type: Date,
+      index: true,
+      unique: true,
+      default: Date.now,
+    },

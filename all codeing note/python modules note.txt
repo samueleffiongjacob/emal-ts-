@@ -1,0 +1,60 @@
+Starting up with software development:
+Recursion: way to stop infinity loops
+
+Pseudocode : this is a way u prepare to exsercute a software
+pseudocode methods.
+
+Flow chat, 
+chronologically,
+functionality.
+
+we have switch
+
+way to test after learning.
+
+coding Bat
+coderByte
+Hacker Rank
+
+
+more info
+mozilla Developer Network(MDN)
+front masters
+web.dev
+microsoft's developers docs
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+enviromental varibles setup:
+file most be root directory
+
+React_ApI_name = ""
+
+## how to use
+procesw.env.React_ApI_name =
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+if the file is in the same directory as your main python files.
+use:
+1) create the function or class of the modules.
+folder.modules
+(from folder .filename import function_name)
+
+if the folder is in another folder in the same directory use:
+import sys
+sys.path.append("..")
+
+then go to root of the folder u are importhing:
+create a file call : ___init___.py
+inside the file :
+from .folder import function_name.
+
+go back to your main work :
+form main folder import function_name
+
+-----------------------------------------------------------------------------------------------
+
+
+

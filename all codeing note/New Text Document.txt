@@ -1,0 +1,7 @@
+how write email validation to verify client email and send email to client email with a link nodejs backend 
+
+how to send email to client from server nodejs
+
+https://mega.nz/fm/kxwyHSSI
+
+usorohgreatgeorge@gmail.com

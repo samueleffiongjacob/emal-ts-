@@ -1,0 +1,7 @@
+npm uninstall -g create-react-app
+
+npm list -g --depth 0
+
+npm list -g
+
+npm uninstall -g appname

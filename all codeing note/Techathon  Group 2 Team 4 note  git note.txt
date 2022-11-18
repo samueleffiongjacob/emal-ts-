@@ -1,0 +1,72 @@
+…or create a new repository on the command line
+echo "# Techathon-Group-2-Team-4" >> README.md
+touch .gitignore
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/samueleffiongjacob/Techathon-Group-2-Team-4.git
+git push -u origin main
+
+
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/samueleffiongjacob/Techathon-Group-2-Team-4.git
+git branch -M main
+git push -u origin main
+
+
+// create a branch and switch to the branch
+$git checkout -b <branch-name>
+ git add .
+ git commit -m "work on responsive navbar"
+ git push origin navbar
+
+// create a branch only
+$git branch <branch-name>
+ 
+
+
+The git branch command is used to list all existing
+ branches in a repository. An asterisk will appear next to
+the currently active branch.
+
+$ git branch
+* master
+
+
+
+If you're merging a new feature into the main branch, you first want to switch to the main branch and then merge into it:
+
+# ...develop some code...
+
+$ git add –A
+$ git commit –m "Some commit message"
+$ git checkout master
+Switched to branch 'master'
+$ git merge new-branch
+
+
+
+push your branch say 'br-1' to remote using git push origin br-1.
+switch to master branch on your local repository using git checkout master.
+update local master with remote master using git pull origin master.
+merge br-1 into local master using git merge br-1. This may give you conflicts which need to be resolved and changes committed before moving further.
+Once merge of br-1 to master on local is committed, push local master to remote master using git push origin master.
+
+
+
+how to delete branch:
+git checkout branch_name
+
+#where branch_name is the name of the branch you want to move to
+#in my case the other branch I have is master, so I'd do:
+#git checkout master
+
+git push origin -d server
+git reset: to undo all changes made on the local git.
+
+DB_URI=mongodb://localhost:27017/jpbakery_tn
+
+08109355372
+251309

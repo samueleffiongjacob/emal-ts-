@@ -1,0 +1,64 @@
+DEEP WEB:
+sub version
+DARK WEB WAS CREATED BY THE US INTELLIGENCE GROUP.
+
+===========================
+TOR
+VBOX
+KALI LINUX
+VERSION: BARE METAL
+
+=====
+TAILS OS ---> FOR CYBER SU
+ALWAY INSTALL IN FLASH FOR SECURITY.
+======================
+SITE AND FOLDER MALWARE CHECKING
+VIRUSTOTAL.COM
+
+========================
+SEARCH ENGINE IN DARK
+SHODAN
+==========
+1) END TO END MESSAGE
+=====================================
+2) FOR TOTAL  ANNONIMITIES .
+
+
+FOR ANYTHING BUY A FLASH DRIVER
+TAILS OS---> MAKE SURE U INSTALL IN FLASH DRIVE
+
+FORENCY --------------> PEOPLE WHO DICOVER 
+FLASH STUFF ON 
+==========================================
+5 PHASES OF HACKING
+
+RECONNAISSANCE
+SCANNING :
+PORT SCAN,NETWORK SCANNING:LIVE SERVICE RUNNING
+VANURIBILTIES:N-MAP
+GAINING ACCESS
+MAINTAINING ACCESS
+CLEARING TRACKS.
+==============================================
+
+ACTIVE
+
+===========
+PASSIVE
+
+=================
+SOCAIL ENGINEERING.
+---------------------------------------
+kali installation on virtual box
+-------------------------------
+Sudo apt-get update.
+sudo apt-get upgrade -y
+===============================
+virus tracking email:
+
+virustotal.com  
+----------------------------------
+
+nmap -v -A
+sudo set toolkit
+

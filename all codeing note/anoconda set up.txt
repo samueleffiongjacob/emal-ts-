@@ -1,0 +1,52 @@
+1)opening packages 
+just type the name:
+rstudio 
+
+2) Install packages
+conda install pandas
+
+3)Creating an instance of python for project
+conda create --name py2 python=2.7
+
+
+4)Activating instance package or package 
+conda activate py2
+
+
+to work with that environment 
+
+4I) conda install spyder
+
+4ii) activate py2
+
+then type
+
+4iii) rstudio
+
+4b) for r studio specificaly.
+
+4bi) inside anaconada: click environment.
+- click on create button.
+
+-type the name of the environment
+
+-select the type of r u want.
+- select r also.
+
+- install r studio in anaconda
+
+- from application select the name u created.
+- click on lunch r studio
+
+
+5) getting started
+
+reticulate::repl_python()
+
+library(reticulate)
+
+6) importing data into r
+import pandas
+data= pandas.read_csv('file name.csv' sep=';'
+
+

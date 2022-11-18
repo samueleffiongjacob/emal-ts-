@@ -1,0 +1,267 @@
+Account
+	-_id
+	-username
+	-email
+	-fullName
+	-password
+	-phoneNumber
+	-picture
+	
+Mentees
+	-_id
+	-profile -> Account(_id)
+	-cohost -> Cohosts(_id)
+	-tracks -> Tracks(_id)
+	-status ["active", "inactive", "suspended"]
+
+Mentors
+	-profile -> Account(_id)
+	-tracks -> Tracks(_id)
+	-cohost -> Cohosts(_id)
+
+Admin
+
+Tracks
+	-name
+	-desc
+
+Tasks
+  --track: Track (_id)
+ - types ["individual", "team"]
+ -deadline
+
+Teams
+	-room
+	-link
+        -number
+        -mentee [mentees(-id)]
+
+grades
+ -task --> Track(-id)
+ -points
+Classes
+	-classvideo
+        week
+       track
+      resouce
+      live
+  resource >(links/pot/docx,pdf)
+
+weeks
+  -
+Resources
+	-link
+	-fileType
+	-track->track(_id)
+
+Quiz
+  -week
+  -data
+  -qustions: string
+  -option: a,b,c,d
+
+  
+
+Announcements
+
+OpenSources
+
+WaitLists
+
+Cohosts
+	-name
+	-email
+
+
+package mgt
+-yarn
+
+code checker:
+
+chat feature:
+CHAT,ANOTHER PERSON RESPOND and group chat
+
+project:phase
+team
+attaindance :live attaindace:
+email invite control for final:base on attaindance,individual and team
+
+project view: all task done
+
+
+
+
+=============================================================
+Techathon's Project Brief
+
+Overview: Techathon is an e-learning platform that provides
+an inclusive & welcoming environment that enables anyone get
+into tech and have a smooth, fun and successful journey.
+ Anyone who wishes to get into tech can join Techathon, 
+users ranging from graduates, undergraduates, 
+entrepreneurs, civil servants etc in order to learn the 
+skills needed for their journey. Techathon will make the 
+learning free and seamless.
+
+Techathon has three major components:
+Kickstart
+Mentorship and 
+Open source
+With Techathon, mentees should be able to get adequate knowledge and real life experience of preferred track.
+
+Customer Interface: A website offering online learning. Inclusion and collaboration is key.
+
+Mentees Dashboard
+
+Joining wait-list & Account creation: if there is no active registration for a cohort ongoing; the user will join wait-list for the next cohort. The wait-list form will request the name and email address of the user. 
+
+If there is an active registration; account creation should be the first step a user will take when they get to the website. The user gets to the homepage and navigates to the sign up page. This won't be requiring lots of private unnecessary information from the user. 
+
+The user should be able to register with their full name (as it should appear in the certificate). 
+
+User name - preferably same as their telegram ID.
+Input password and confirm password.
+Phone number and email address.
+After a successful sign up, users will verify their email or phone number to make sure the information is accurate. 
+
+Welcome email: the user after a successful sign up and verification will get 
+a welcome email containing a video explaining each track in order to aid them make a good decision. 
+Also, in the welcome email there will be a login link that will direct the user to select a track.
+Before submission, the user is shown the community code of conduct, which the user will confirm to have read and will abide by. The user should not be able to proceed with the track selection submission without opening the code of conduct link.
+
+Dashboard: the mentees dashboard will contain 
+their progress, 
+programme stage, announcement, and 
+assignment/project details.
+
+My tasks: this feature will have a table that contains
+ the task action, 
+task point, 
+grade and deadline for submission.
+
+Quiz: mentors can upload objective questions, quiz will be available only on quiz weeks. When a mentee clicks on a quiz , she/he will be notified that he must leave or refresh his screen and the time, number of questions, he will have an option to start the quiz or cancel. If he starts a quiz a timer should begin. 
+
+My Team: mentees will be able to see their 
+team group name and number, 
+link to join the team and 
+team discussion room.
+
+My class: this feature will allow mentees to see 
+their videos after the live class for the current week only,
+ the Google calendar schedule which they can add to their calendars and set a reminder for. 
+Live class and community calls. 
+The resources for the class like slides, images, links etc.
+Resources: Resources related to user tracks other than the resources found in class, can be seen here. Link to videos, pdf, podcast, audio files this will be shared from admin dashboard etc.
+
+Open source : The future is open. Shows links to open source projects available .
+
+Certificate : Mentees can download their certificate here
+
+Help: 
+Frequently asked questions will be answered on this page.
+ Customer care support for complaint and feedback.
+
+Profile: this feature will allow mentees to:
+edit their names, phone number and username.
+Upload an avatar
+Customize settings e.g. dark mode appearance
+
+Feedback and suggestion: Mentees will be able to drop 
+their testimonies, reviews, 
+and give suggestions on how the community and mentors should improve.
+
+Mentors Instructor Dashboard
+
+Instructor should be able to login to the dashboard.
+
+Dashboard : Overview of mentees activities respective to track assigned to.mentors can search mentees see their groups and individual assignments.
+
+Courses Facilitated: shows list of courses instructor is taking.
+
+Individual task Overview:  see number of submitted tasks, yet to submit tasks, Not yet reviewed task, reviewed and graded. 
+
+Group project Overview:  see number of submitted tasks, yet to submit tasks, Not yet reviewed task, reviewed and graded. 
+
+Students:  see total number of students can’t perform CRUD.
+Instructors should be able to receive dashboard messages from the admin.
+
+Mentees: List of  mentees and view details (like name, student ID, individual projects and team projects).
+
+
+Profile: instructor should be able to edit their profile and avatar.
+
+Task: 
+Individual task: Add , edit and delete individual task 
+Group task: Add, edit and delete team projects and view task details.
+
+QUIZ: Add, edit and delete quiz questions and 4 answer options.
+
+
+Class: upload class videos, with titles  and resources tab related  to the class like slides, images, links etc.
+
+
+.Grade: choose cohort to grade
+
+Overview: 
+
+Student in cohort: See see number of instructors in that  cohort
+Submitted: See number of submitted individual and team projects
+Yet to submit: See number of yet to submit individual and team projects.
+Individual and team graded: see number of individuals and teams that have been graded.
+Individual and team not yet graded: see number of individuals and teams that have not yet graded.
+Recently submitted individual project: see number recently submitted projects and can view list to all.
+Recently submitted team project: see number recently submitted projects and can view the list to all.
+Statistics: Percentage of passed students and failed students.
+
+Recently submitted individual project: view recent individual projects and be able to enter and submit grades.
+
+Recently submitted team project: view recent team project and be able to enter and submit grades.
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+Techathon Admin Dashboard
+
+The admin dashboard is where the overall administration of the web app is done.
+
+Login: admin can login using username and password.
+
+Dashboard:  Overview of what is going on from the instructor and mentees dashboard.
+
+Ongoing courses : shows list of available tracks and number of mentees currently taking those tracks
+Courses : shows number of courses.
+Students: shows total number of students enrolled.
+Instructors: Shows number of instructors.
+Student Engagement: Shows a chart for different cohorts.
+Notification : Notification bell icon that notifies the admin on incoming messages.
+
+
+Track: Add courses, see current courses, perform CRUD operations of each course.
+
+Students: See number of students, search for students, Add New instructor to a track, see and perform CRUD on each list of students.ability to suspend a mentee from accessing dashboard.
+
+Filter: filter feature to filter active mentees, inactive mentess suspended mentees.
+
+Teams: Create teams, add mentees to teams, perform CRUD
+
+Instructors: See number of instructors, search for instructors, Add New instructor to a track, see and perform CRUD on each list of instructors.
+
+Announcement : General announcement,  Post dashboard messages to instructor dashboard and post dashboard messages to mentees by track.
+
+Open source: General Resources,  Post dashboard resources to instructor dashboard and post dashboard resources to mentees by track.
+
+
+Resources: post resources to mentees dashboard
+
+====================================================================================
+
+

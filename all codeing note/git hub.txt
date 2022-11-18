@@ -1,0 +1,49 @@
+  All git commands know me:
+git chechout -b name , 
+git push --stream
+
+git pull --rebase
+git checkout -b name,
+git add . 
+git merge main, 
+
+
+git checkout main
+git branch
+git checkout -b name
+git push -u origin
+
+git --set upstream origin new branch
+
+git checkout --scr/index-desire.js
+git checkout main
+git checkout pull --rebase
+git checkout new-branch
+git status
+git add .
+git commit -m "added a line"
+git push
+
+for assignmt
+git check -b stage
+
+git log --oneline(list of all commit)
+git log    (to get a list of the list of all commit)  
+git log   --start  (this shows all folder Tracks)
+------------------------------------------------------------------------------------
+
+.gitignore file:
+
+python 
+
+# Python auto-generated file/folders
+__pycache__/
+
+# Anything that ends with ".pyc"
+*.pyc
+
+# IDE specific 
+.idea/
+.vscode
+
+db.sqlite3

@@ -1,0 +1,112 @@
+AM HERE TO LEARN FULLSTACK WEBDEVELOPMENT,DEVOPS AND SOFTWARE ENGINEERING
+
+
+
+As a student of federal university of technology we often don't have light on campus and it affects me greatly when l have an idea to work on. If am been given a MacBook it would  be of a greater advantage to me, because of the battery life and the portability which would enable me work at anytime and build ideas and imagination. It would give me great opportunity to work direct with LINUXS  commands instead of the WSL by windows I'm using currently. The WSL slows my 2gb ram laptop down terribly. 
+
+ Being a leader in school, my course mate, senior colleague's and other people who wants to learn  from me but light factor would hinder them from learning. With a mac book l would be able to give back to my community the skills l have for free. 
+Freely l acquire freely  l will give to people who needs help also..
+
+
+https://github.com/ShapeAI/Python-and-Machine-Learning/blob/main/Important_concepts_in_python.ipynb
+
+
+
+https://github.com/ShapeAI/Python-and-Machine-Learning/blob/main/Important_concepts_in_python.ipynb
+
+SAMUEL EFFIONG JACOB
++234 8164570781
+samueleffiongjacob@gmail.com
+
+
+
+-- select country, average budget, 
+-- and average gross
+SELECT country, AVG(budget) AS avg_budget, 
+       AVG(gross) AS avg_gross
+-- from the films table
+FROM films
+-- group by country 
+GROUP BY country
+-- where the country has more than 10 titles
+HAVING COUNT(title) > 10
+-- order by country
+ORDER BY country
+-- limit to only show 5 results
+LIMIT 5;
+
+
+KEYSTONE
+EL WAZIRI ROAD OPP FUT GATE BOSSO MINNA NIGER STATE
+
+FCMB
+4,ATIAMKPAT STREET OFF IKPA ROAD,UYO
+JACOB SAMUEL EFFIONG
+
+https://github.com/samueleffiongjacob/alx-pre_course.git
+https://github.com/samueleffiongjacob/alx-pre_course.git
+
+personal access tokens:
+git
+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
+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
+
+
+NEW ACCESS TOKEN
+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
+how clone to alx machien
+root@896cf839cf9a:/# git clone https://{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}@github.com/samueleffiongjacob/alx-pre_course.git 
+
+On windows, use CTRL + A + V to paste in the web terminal
+
+git commands alx:
+ echo "# alx-system_engineering-devops" > README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/samueleffiongjacob/alx-system_engineering-devops.git
+git push -u origin main
+alx-pre_course# cat README.md 
+
+
+Update your git identity
+root@896cf839cf9a:/alx-pre_course# git config --global user.email "samueleffiong685@gmail.com"
+root@896cf839cf9a:/alx-pre_course# git config --global user.name "samueleffiongjacob"
+
+more on git 
+git remote -v
+To know the name(s) of your current remote url.
+
+then
+
+git remote set-url remote_name remote_URL
+
+To set a new one.
+
+Where remote_name is the name you get  when you run git remote -v.
+An example of a remote name is origin.
+Remote_url is: https://{YOUR_PERSONAL_TOKEN}@github.com/{YOUR_USERNAME}/repo_name.git
+
+to force remove a directory:
+rm -rf
+
+git merge
+
+if merge conflict:
+git mergetool
+i
+:wq
+:wq
+:wq
+
+
+post later
+with TypeScript, using a word when you need a number will show an error on your laptop  
+
+With JavaScript, using a word when you need a number shows an error on your customer's laptop..
+
+agricolae
+
+
+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

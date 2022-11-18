@@ -1,0 +1,31 @@
+ping ip adress "ip aress"
+
+nslookup "website name"
+
+nststat -r
+
+tracert 
+
+show mac id click 'tab key on keybord'
+
+## router config
+
+enable
+configure terminal
+change host name ' hostname ""'
+enble password:
+
+line console
+
+login
+exit
+
+line vty 
+password-encrytp secret
+login
+exit
+
+interface gig:
+no shutdown
+
+copy running config startup config

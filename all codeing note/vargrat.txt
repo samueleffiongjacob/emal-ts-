@@ -1,0 +1,47 @@
+C:\Users\Samuel Effiong> remove
+
+vagrant global-status --prune
+
+rm -r ~/.vagrant.d
+
+rm -r ~/.vagrant/data
+
+vagrant global-status
+
+With the two commands below, you will have a fully usable virtual machine with Ubuntu 18.04 LTS 64-bit.
+=====================================================
+initizaiting vargrant:
+
+vagrant init hashicorp/bionic64
+=============================================
+message after install  
+A `Vagrantfile` has been placed in this directory. You are now
+ready to `vagrant up` your first virtual environment! Please read
+the comments in the Vagrantfile as well as documentation on
+`vagrantup.com` for more information on using Vagrant.
+=========================
+see
+ls -al 
+==========================
+vagrant up
+============================
+
+Add the Ubuntu 20.04 (Focal) image to your box list
+===============================================
+vagrant box add ubuntu/focal64
+
+vagrant init ubuntu/focal64
+
+vagrant plugin install vagrant-vbguest
+
+vagrant up
+
+vagrant ssh
+
+
+=======================
+calibration   
+
+09161400255
+
+bios o hp

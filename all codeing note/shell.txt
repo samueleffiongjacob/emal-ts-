@@ -1,0 +1,70 @@
+
+================================
+script to absolute directory:
+#!/bin/bash
+pwd "$0"
+
+#!/bin/bash
+chmod 007 hello
+
+always give script permission to run 
+chmod u+x filename
+
+./filename
+
+ls --help
+ls -al (all files including hidden files)
+-nal
+
+=================================
+path ='readlink -f "${BASH_SOURCE:$0}"'
+DIR_PARTH=$(dirname $path)
+
+path =$(realpath "${BASH_source:-$0}")
+$path
+dirname "$(realpath $0)"
+====================================
+
+permission for user:
+su usernmae
+run chmod u+x filename
+=======================
+script that prints the effective username of the current user
+whoami
+==============
+script that prints all the groups the current user is part of.
+groups
+====================
+script that prints the effective username of the current user
+chown owner file1
+
+=============================
+script that changes the owner of the file hello to the user betty
+sudo chown you some_file
+==================================
+script that creates an empty file 
+touch hello
+==============================
+cript that adds execute permission to the owner of the file
+chmod 744 some_file
+======================
+ script that adds execute permission to the owner and the group owner, and read permission to other users, to the file
+chmod ugo+x filename
+================================
+ Chmod 640 Chmod 640 (chmod a+rwx,u-x,g-wx,o-rwx) 
+sets permissions so that, (U)ser / owner can read, 
+can write and can't execute. (G)roup can read, can't 
+write and can't execute. 
+(O)thers can't read, can't write and can't 
+execute.
+
+Write a script that sets the permission to the file hello as follows:
+
+Owner: no permission at all
+Group: no permission at all
+Other users: all the permissions
+============
+Write a script that sets the mode of the file hello 
+the same as olleh’s mode
+
+chmod --reference=file1 file2

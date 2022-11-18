@@ -1,0 +1,3 @@
+password: samueleffiongjacob15$
+
+http://localhost/ECONOMIC%20DESIGNER%20%20INTERNATIONAL/wp-login.php

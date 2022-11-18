@@ -1,0 +1,47 @@
+import { APIError } from './utils/apiError';
+import { NextFunction, Request, Response } from 'express';
+
+// ERROR MIDDLE way
+app.use(APIError); 
+
+
+npm install cors
+npm install --save-dev @types/cors
+
+// email creation 
+08063472258
+0ctober 12 2000
+ogidispearlprojectlimited@gmail.com
+password: Ogidispearl-Project-Limited//JL0zZv5trjjnJhJv
+
+// db creation
+Created using email above
+db hosted in Cape Town (af-south-1)
+
+username : Ogidispearl-Project-Limited
+password :  Ogidispearl-Project-Limited34
+
+// accessing data
+https://data.mongodb-api.com/app/data-njhsk/endpoint/data/v1
+
+// connection from code:
+mongodb+srv://Ogidispearl-Project-Limited:Ogidispearl-Project-Limited34@ogidispearl-project-lim.lnh1fpn.mongodb.net/?retryWrites=true&w=majority
+
+Email  Message 
+
+
+package-lock.json pm2 lockfile
+
+// verscel way : vercel.json
+{
+
+    "builds": [
+        {
+            "src": "./index.js",
+            "use": "@vercel/node"
+        }
+    ],
+  "rewrites": [{ 
+      "source": "/(.*)",
+      "destination": "/" }]
+}

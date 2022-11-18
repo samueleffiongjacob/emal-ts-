@@ -1,0 +1,30 @@
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'FGCIcisco15$';
+
+FLUSH PRIVILEGES;
+
+
+TO send data 
+
+first click post
+
+{
+ "id": 1,
+ "email": "sam@gmail.com",
+ "phone_number": "0123456789"
+}
+
+
+alway makes sure name is "id"
+
+
+ALTER TABLE properties
+ADD FOREIGN KEY (user_id) REFERENCES users(id);
+
+DATA LINKS
+https://www.guru99.com/database-normalization.html
+https://afteracademy.com/blog/what-are-the-different-types-of-relationships-in-dbms
+
+I shared a Jam file with the meeting: https://jamboard.google.com/d/1wNEMBmJs_X5DKmEdOdUh_UnHTIuZlLB_TDfLv150DQQ/edit?usp=meet_whiteboard
+
+MENTOR USERNAME:
+Desire Kaleba 

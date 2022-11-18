@@ -1,0 +1,81 @@
+To create virtualev
+virtualenv filename or python3 -m venv filename
+new lab: py -m venv env
+
+to activate virtualenv:
+//power shell
+virtualenv env
+filename\scripts\activate.
+
+for mac:
+source filename/bin/activate
+
+to remove virtual env:
+rm-rf env
+
+after create  a file.py.
+
+to use package in file.py:
+pip>freeze>requirement.txt
+
+to see package activated for use 
+cat requirement.txt
+
+to see the list of everything
+pip freeze
+
+installing package
+pip install django
+
+starting package project
+django-admin startproject filename
+
+runing python server/ultility file
+python manage.py runserver
+
+migrating 
+
+python manage.py migrate
+
+install an app for django
+python manage.py startapp filename
+
+
+creating a superuser
+python manage.py createsuperuser
+
+
+
+create models for migrations in models
+make models visible with:
+python manage.py makemigrations
+
+Apply migrations:
+python manage.py migrate
+
+note :
+python manage.py (is a utility command for django)
+
+viturlenvwrapper win
+https://youtu.be/VuETrwKYLTM
+
+----------------------------------------------------------------------
+Django Models:
+from django.db import models.
+
+clas TodoApp(models.Model):
+     title = models.CharField(max-length-200)
+     description = models.TextField()
+
+     
+     def __str__(self):
+         return self.title
+-------------------------------------------------------------------
+package control:
+pip freeze > requirements.txt
+
+///  to install others dependency in python:
+pip install -r requirements.txt
+
+
+-------------------------------------------------------------------------------------------

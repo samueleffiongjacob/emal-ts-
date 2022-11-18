@@ -1,0 +1,62 @@
+command to save a file from within emacs:
+Ctrl + x followed by Ctrl + s
+
+command to open a file from within emacs:
+Ctrl-x ctrl-f
+
+command to search forward in emacs:
+Ctrl-s
+
+how to open file with emacs:
+Ctrl key, followed by the Alt or Esc key
+
+what is the command to quit emacs:
+ctrl-x ctrl-c : Save and quit.
+
+ctrl-h i:
+Help in Emacs- describes emacs shortcuts and commands
+
+ctrl-x u : undo the last command.
+
+ctrl-z : Stop Emacs and quit immediately without
+confirmation (All changes in buffer are lost).
+ctrl-g : Cencel current command and revert back from 
+command mode.
+
+To cut the text, press C-w.
+To copy the text, press M-w.
+To paste the text, press C-y.
+
+If Emacs stops responding to your commands, you can stop it safely by
+typing C-g.
+
+If you have typed an <ESC> by mistake, you can get rid of it with a C-g.
+
+command to search forward in emacs:
+Ctrl-s
+
+        C-f     Move forward a character
+        C-b     Move backward a character
+
+        M-f     Move forward a word
+        M-b     Move backward a word
+
+        C-n     Move to next line
+        C-p     Move to previous line
+
+        C-a     Move to beginning of line
+        C-e     Move to end of line
+
+        M-a     Move back to beginning of sentence
+        M-e     Move forward to end of sentence
+
+======================
+vi 
+
+i --- insert
+:wq------quit vi, writing out modified file to file named in original invocation
+:q------quit
+:q! ------ quit force
+
+b ------ first line 
+$ ------- end of line

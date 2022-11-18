@@ -1,0 +1,54 @@
+SELECT p1.country, p1.continent,
+prime_minister, president FROM prime_minister
+AS p1
+INNER JOIN presidents  As p2
+0n p1.country = p2.country; 
+SELECT *
+FROM left_table
+INNER JOIN right_table
+ON left_table.id = right_table.id;
+
+solution 1
+-- Select name fields (with alias) and region 
+SELECT cities.name AS city, countries.name AS country , region
+FROM cities
+  INNER JOIN countries
+    ON cities.country_code = countries.code;
+
+
+hints:
+SELECT c1.name AS city, c2.name AS country
+FROM cities AS c1
+INNER JOIN countries AS c2
+ON c1.country_code = c2.code;
+
+soln 2.
+-- Select fields with aliases
+SELECT c.code AS country_code, name, year, inflation_rate
+FROM countries AS c
+  -- Join to economies (alias e)
+  INNER JOIN economies AS e
+    -- Match on code
+    ON c.code = e.code; 
+
+soln3
+-- Select fields
+SELECT c.code, name, region, year, fertility_rate
+  -- From countries (alias as c)
+  FROM countries AS c
+  -- Join with populations (as p)
+  INNER JOIN populations AS p
+    -- Match on country code
+    ON c.code = p.country_code;
+
+
+  -- From countries (alias as c)
+  FROM countries AS c
+  -- Join to populations (as p)
+  INNER JOIN populations AS p
+    -- Match on country code
+    ON c.code = p.country_code
+  -- Join to economies (as e)
+  INNER JOIN economies AS e
+    -- Match on country code
+    ON c.code = e.code;

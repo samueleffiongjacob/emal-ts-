@@ -1,0 +1,20 @@
+In the pass to be sincerly l have not relly done so much had things.
+l have done grapics,movie,and introductory to node js and javascript.
+that is why l said l have not really done any had work.
+
+task 0.
+https://alx-intranet.hbtn.io/corrections/3268334/correct
+
+Resources mentioned by Michael Onyeweke 
+
+1. Harvard CS50 lectures 
+
+https://youtube.com/playlist?list=PLhQjrBD2T382_R182iC2gNZI9HzWFMC_8 
+
+2. Jenny’s Lectures 
+
+https://youtube.com/c/JennyslecturesCSITNETJRF
+
+3. https://www.geeksforgeeks.org/
+
+4. https://www.tutorialspoint.com/index.htm
